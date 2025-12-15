@@ -14,11 +14,10 @@ public class BankApp {
         System.out.println("\n All Bank Accounts:");
         for (BankAccount account : accounts) {
             account.displayAccountDetails();
-            System.out.println();    
             account.deposit(100);   
-            account.displayAccountDetails();
+           // account.displayAccountDetails();
             account.withdraw(200);   
-            account.displayAccountDetails(); 
+            //account.displayAccountDetails(); 
             System.out.println("-----------------------");
     }
 

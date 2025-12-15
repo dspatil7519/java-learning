@@ -13,9 +13,7 @@ public class CurrentAccount extends BankAccount {
     }
 
     public boolean withdraw(double amount) {
-        System.out.println("getBalance() " + getBalance());
-        System.out.println("getOverdraftLimit() " + getOverdraftLimit());
-        System.out.println("amount " + amount);
+        
          if (amount > 0 && (getBalance() > amount)) {
            super.withdraw(amount);
             return true;
