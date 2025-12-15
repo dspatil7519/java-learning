@@ -26,13 +26,10 @@ public class BankAccount {
         }
     }
     public boolean withdraw(double amount) {
-        System.out.println("base Class: getBalance() " + getBalance());
-         System.out.println("base Class: amount() " + amount);
         if (amount > 0 && amount <= balance) {
             balance -= amount;
             return true;
         }
-         System.out.println("base Class: balance() " + balance);
         return false;
     }
 
